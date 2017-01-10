@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pannellum Test</title>
+	<link rel="stylesheet" href="pannellum/pannellum.css">
+	<script src="pannellum/pannellum.js"></script>
+	<style>
+		#architecture {
+	        width: 640px;
+	        height: 480px;
+	        margin: 0 auto;
+	    }
+	</style>
+</head>
+<body>
+	<div id="architecture"></div>
+	<script>
+		var viewer = pannellum.viewer('architecture', {
+		    "type": "equirectangular",
+		    "panorama": "room360.jpg",
+		    "autoLoad": true,
+
+		    //"hotSpotDebug": true,
+		    "hotSpots": [
+		        {
+		            "pitch": -12.1368,
+			    	"yaw": 49.6711,
+		            "type": "info",
+		            "text": "Sofá R$2.500,00",
+		            "URL": "http://www.americanas.com.br"
+		        }
+	        ],
+		    
+		    "title": "Sala",
+    		"author": "Taynah Almeida"
+		});
+	</script>
+</body>
+</html>
